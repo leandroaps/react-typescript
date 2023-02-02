@@ -1,15 +1,22 @@
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.css';
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <main className="form-signin w-100 m-auto">
+      <div className="container">
+        <App />
+      </div>
+    </main>
   </React.StrictMode>
 );
 
