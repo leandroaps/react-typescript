@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react';
 
 const DummyComponent: React.FC = () => {
   const ref = useRef<HTMLInputElement>(null)
