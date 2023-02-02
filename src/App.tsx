@@ -15,7 +15,6 @@ const DummyComponent: React.FC = () => {
 
   useEffect(() => {
     setValue(localStorage.getItem("typed"));
-    console.log(localStorage.getItem("typed"));
   }, []);
 
   return (
