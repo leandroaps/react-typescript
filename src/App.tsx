@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react'
 
 const DummyComponent: React.FC = () => {
-  const ref = useRef<HTMLInputElement>(null)
+  const ref = useRef<HTMLInputElement | null>(null)
   const [value, setValue] = useState<any>('')
 
   const changeValues = (target: string): void => {
@@ -15,7 +15,7 @@ const DummyComponent: React.FC = () => {
   }
 
   useEffect(() => {
-    if (ref.current != null) ref.current.focus()
+    if (ref.current !== null) ref.current.focus()
   }, [])
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const DummyComponent: React.FC = () => {
       <input
         type="text"
         ref={ref}
-        value={value}
+        value={value !== null ? value : ''}
         onChange={(e) => {
           changeValues(e.target.value)
         }}
