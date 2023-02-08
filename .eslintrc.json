@@ -12,8 +12,7 @@
   },
   "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
   "rules": {
-    "omitLastInOneLineBlock": true,
-    "semi": ["error", "never"],
+    "semi": 0,
     "@typescript-eslint/semi": "off",
     "no-unexpected-multiline": "error"
   }
